@@ -91,7 +91,8 @@ testAggregation {
         "bom",
         "kdoc",
         "template",
-        "microapps-lib",
+        "template-app",
+        "utility-network-trace-app",
         "composable-map"
     ).forEach {
         this.modules.include(project(":$it"))
