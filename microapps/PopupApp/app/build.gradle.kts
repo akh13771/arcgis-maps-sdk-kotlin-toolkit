@@ -84,8 +84,22 @@ android {
 
 dependencies {
     implementation(project(":geoview-compose"))
+    implementation(platform(libs.coil.bom))
+    //implementation("io.coil-kt.coil3:coil")
+    implementation(libs.coil)
+    implementation(libs.coil.compose)
+
+    implementation(platform(libs.coil3.bom))
+    //implementation("io.coil-kt.coil3:coil")
+    implementation(libs.coil3)
+    implementation(libs.coil3.compose)
+
     implementation(arcgis.mapsSdk)
     implementation(project(":popup"))
+    implementation(libs.androidx.material.icons)
+    implementation(libs.androidx.media3.exoplayer)
+    implementation(libs.androidx.media3.exoplayer.dash)
+    implementation(libs.androidx.media3.ui)
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.bundles.composeCore)
     implementation(libs.bundles.core)
